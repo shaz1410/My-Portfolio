@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: linear-gradient(135deg, #8A2BE2, #1E90FF); /* violet to blue gradient */
+  color: #FFFFFF; /* text color changed for contrast */
+}
+
+header {
+  background: rgba(138, 43, 226, 0.85); /* semi-transparent violet */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #1E90FF; /* blue button */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #8A2BE2; /* violet on hover */
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #FFFFFF; /* headers in white for readability */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.1); /* slightly transparent white */
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.15); /* slightly transparent card */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(30, 144, 255, 0.85); /* semi-transparent blue */
+  color: white;
+}
