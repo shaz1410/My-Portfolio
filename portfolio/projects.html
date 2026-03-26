@@ -2,55 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects | Sharon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Sharon Mthembu</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+<canvas id="bg-canvas"></canvas>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">Developer Profile</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html">🏠 Home</a>
+    <a href="about.html">🤖 Developer Profile</a>
+    <a href="skills.html">⚡ Skills</a>
+    <a href="projects.html">🚀 Projects</a>
+    <a href="contact.html">📡 Contact</a>
 </nav>
 
-<section class="content">
-    <h2>Projects</h2>
+<div class="content">
+    <h2><i class="fas fa-rocket"></i> Featured Projects</h2>
+    <p style="margin-bottom: 2rem;">Here are some of my recent works that showcase my skills in backend development, testing, and problem-solving.</p>
 
-    <div class="project-card">
-        <h3>Weather App</h3>
-        <img src="../Images/weather.png" height="50" width="60"/>
-        <p>Python CLI weather application using OpenWeatherMap API.</p>
-        <a href="https://github.com/shaz1410/weather-app.git" target="_blank">GitHub Repo</a>
+    <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="project-info">
+                <h3>Weather App</h3>
+                <p>Python CLI weather application using OpenWeatherMap API. Features include city search, temperature display, humidity, wind speed, and error handling.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">CLI</span>
+                </div>
+                <a href="https://github.com/shaz1410/weather-app.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fas fa-calculator"></i>
+            </div>
+            <div class="project-info">
+                <h3>Calculator App</h3>
+                <p>Interactive CLI calculator with comprehensive input validation, error handling, and support for multiple calculations in a single session.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">CLI</span>
+                    <span class="tech-tag">Error Handling</span>
+                </div>
+                <a href="https://github.com/shaz1410/Calculator-.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fas fa-gamepad"></i>
+            </div>
+            <div class="project-info">
+                <h3>UNO Game</h3>
+                <p>Multi-player UNO card game implementation with complete game logic including special cards, turn management, and win condition detection.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Game Logic</span>
+                    <span class="tech-tag">CLI</span>
+                </div>
+                <a href="https://github.com/shaz1410/uno.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image">
+                <i class="fas fa-book"></i>
+            </div>
+            <div class="project-info">
+                <h3>Library API</h3>
+                <p>Spring Boot REST API with full CRUD operations using Spring Data JPA and H2 database. Features include proper HTTP status codes and JSON responses.</p>
+                <div class="tech-stack">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">REST API</span>
+                    <span class="tech-tag">Postman</span>
+                </div>
+                <a href="https://github.com/shaz1410/library-api.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
     </div>
-
-    <div class="project-card">
-        <h3>Calculator App</h3>
-        <img src="../Images/Neon pink calculator icon.jpeg" height="50" width="60"/>
-        <p>CLI calculator with input validation and error handling.</p>
-        <a href="https://github.com/shaz1410/Calculator-.git" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project-card">
-        <h3>UNO Game</h3>
-        <img src="../Images/Screenshot from 2026-02-24 13-30-54.png" height="50" width="60"/>
-        <p>Python-based CLI card game with full game logic implementation.</p>
-        <a href="https://github.com/shaz1410/uno.git" target="_blank">GitHub Repo</a>
-    </div>
-
-    <div class="project-card">
-        <h3>Library API</h3>
-        <img src="../Images/library.png" height="50" width="60"/>
-        <p>Spring Boot REST API with CRUD operations and Postman-tested endpoints.</p>
-        <a href="https://github.com/shaz1410/library-api.git" target="_blank">GitHub Repo</a>
-    </div>
-
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Sharon Mthembu</p>
+    <p>© 2026 Sharon Mthembu | <i class="fas fa-robot"></i> More projects coming soon</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

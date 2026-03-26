@@ -2,30 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sharon Mthembu | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharon Mthembu | Space Office Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+<canvas id="bg-canvas"></canvas>
 
 <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">Developer Profile</a>
-    <a href="skills.html">Skills</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user-astronaut"></i> Developer Profile</a>
+    <a href="skills.html"><i class="fas fa-microchip"></i> Skills</a>
+    <a href="projects.html"><i class="fas fa-rocket"></i> Projects</a>
+    <a href="contact.html"><i class="fas fa-satellite-dish"></i> Contact</a>
 </nav>
 
-<header class="home-header">
+<!-- Space Office Section -->
+<div class="space-office">
+    <div class="office-container">
+        <!-- Floating holographic desk -->
+        <div class="hologram-desk">
+            <div class="desk-panel">
+                <div class="scan-line"></div>
+                <div class="hologram-content">
+                    <div class="status-bar">
+                        <span class="status-light online"></span>
+                        <span class="status-text">SYSTEM ONLINE | SPACE STATION: CAPE TOWN SECTOR</span>
+                        <span class="status-light pulse"></span>
+                    </div>
 
-    <img src="../Images/shaz.png" height="650" width="500"/>
-    <h1>Sharon Mthembu</h1>
-    <p>Software Developer & Aspiring Quality Assurance Engineer</p>
-    <a class="btn" href="projects.html">View My Work</a>
-</header>
+                    <div class="profile-section">
+                        <div class="avatar-container">
+                            <div class="avatar-ring"></div>
+                            <img src="../Images/shaz.png" alt="Sharon Mthembu" class="avatar" onerror="this.src='https://via.placeholder.com/150x150?text=👩🏽‍💻'">
+                            <div class="floating-orbit"></div>
+                        </div>
+                        <div class="identity-data">
+                            <h1 class="glitch-text" data-text="SHARON MTHEMBU">SHARON MTHEMBU</h1>
+                            <div class="title-badge">
+                                <i class="fas fa-code"></i> SOFTWARE ENGINEER
+                                <span class="separator">|</span>
+                                <i class="fas fa-vial"></i> QA SPECIALIST
+                            </div>
+                            <div class="coordinates">
+                                <i class="fas fa-map-marker-alt"></i> COORDINATES: 33.9249° S, 18.4241° E
+                                <span class="blink">●</span> ACTIVE MISSION
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holographic Data Stream -->
+                    <div class="data-stream">
+                        <div class="data-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="data-value">NQF Level 6</div>
+                            <div class="data-label">Software Engineering</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-project-diagram"></i>
+                            <div class="data-value">12+</div>
+                            <div class="data-label">Projects Completed</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-certificate"></i>
+                            <div class="data-value">5+</div>
+                            <div class="data-label">Certifications</div>
+                        </div>
+                        <div class="data-card">
+                            <i class="fas fa-code-branch"></i>
+                            <div class="data-value">Git</div>
+                            <div class="data-label">Version Control</div>
+                        </div>
+                    </div>
+
+                    <!-- Mission Statement -->
+                    <div class="mission-panel">
+                        <div class="mission-header">
+                            <i class="fas fa-bullseye"></i>
+                            <span>CURRENT MISSION OBJECTIVE</span>
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <p>Building robust, scalable software systems while ensuring quality assurance excellence. Seeking internship opportunities to contribute to development and QA practices in the tech universe.</p>
+                    </div>
+
+                    <!-- Tech Stack Dashboard -->
+                    <div class="tech-dashboard">
+                        <div class="dashboard-title">
+                            <i class="fas fa-microchip"></i> PRIMARY TECH ARSENAL
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="tech-grid">
+                            <div class="tech-item" data-skill="Python">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                            <div class="tech-item" data-skill="Java">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                                <div class="skill-level" style="width: 80%"></div>
+                            </div>
+                            <div class="tech-item" data-skill="C#">
+                                <i class="fas fa-code"></i>
+                                <span>C#</span>
+                                <div class="skill-level" style="width: 75%"></div>
+                            </div>
+                            <div class="tech-item" data-skill="Spring Boot">
+                                <i class="fas fa-leaf"></i>
+                                <span>Spring Boot</span>
+                                <div class="skill-level" style="width: 70%"></div>
+                            </div>
+                            <div class="tech-item" data-skill="Docker">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                                <div class="skill-level" style="width: 65%"></div>
+                            </div>
+                            <div class="tech-item" data-skill="Testing">
+                                <i class="fas fa-vial"></i>
+                                <span>QA/Testing</span>
+                                <div class="skill-level" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <a href="projects.html" class="btn-primary">
+                            <i class="fas fa-rocket"></i> EXPLORE PROJECTS
+                        </a>
+                        <a href="contact.html" class="btn-secondary">
+                            <i class="fas fa-paper-plane"></i> ESTABLISH CONNECTION
+                        </a>
+                    </div>
+
+                    <!-- System Log -->
+                    <div class="system-log">
+                        <div class="log-header">
+                            <i class="fas fa-terminal"></i> SYSTEM_LOG > status_check.sh
+                        </div>
+                        <div class="log-entries">
+                            <div class="log-entry">[OK] Neural network interface active</div>
+                            <div class="log-entry">[OK] Code compilation ready</div>
+                            <div class="log-entry">[ACTIVE] Awaiting new missions</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Tech Orbs -->
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
+</div>
 
 <footer>
-    <p>© 2026 Sharon Mthembu</p>
+    <p>© 2026 Sharon Mthembu | <i class="fas fa-robot"></i> Operating from Cape Town Space Sector | <span id="live-time"></span></p>
 </footer>
 
+<script src="script.js"></script>
+<script>
+    // Live time display
+    function updateTime() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        document.getElementById('live-time').innerHTML = `<i class="far fa-clock"></i> ${timeString} UTC+2`;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+</script>
 </body>
 </html>
